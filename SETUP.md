@@ -8,7 +8,7 @@ This guide explains exactly how to configure the app and how the code interprets
 
 - **File name:** `workflow-state-notifications-setup.json`
 - **Location:** repository **root** of the **default branch** (usually `main`)
-- If the file is **missing** or **invalid JSON**, the app **skips** processing (and, if Checks are enabled, may show a “Configuration required” card).
+- If the file is **missing** or **invalid JSON**, the app **skips** processing.
 
 **Minimal working example**
 
@@ -68,12 +68,6 @@ There are **no emails** for repeated failures/successes in a row. Non-terminal/i
 - `Actions: read`
 - `Metadata: read`
 
-**Optional (nice to have)**
-
-- `Checks: write` — enables a rich **Check Run** card on PR/commit when configuration is missing/invalid.
-  - If not granted, the app simply **doesn’t** post Checks (no breakage).
-  - You can add this permission later; existing installs continue to work without it.
-
 ---
 
 ## 6) Other behavior worth knowing
@@ -128,5 +122,4 @@ There are **no emails** for repeated failures/successes in a row. Non-terminal/i
 1) Place **`workflow-state-notifications-setup.json`** in the **root** of the **default branch**.  
 2) Use `apply_to.workflows` to select runs (`"*"` = all, or a list/glob), knowing caps will truncate.  
 3) Provide emails under `channels.email`; only the first N are used.  
-4) Expect **one** email on **first failure** and **one** on **recovery** per workflow/branch.  
-5) Optional: grant **Checks: write** for a richer PR/commit card—safe to add at any time.
+4) Expect **one** email on **first failure** and **one** on **recovery** per workflow/branch.

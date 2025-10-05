@@ -10,6 +10,6 @@
 
 **Suspension/termination.** We may suspend for abuse, security risk, or non-payment. On Marketplace **effective cancellation** or **uninstall**, we deactivate immediately and delete personal data within 30 days (tombstone only, no PII retained).
 
-**Security.** Least-privilege GitHub scopes (Actions: read; Checks: write; Metadata: read). Data processed on Cloudflare Workers/KV; all network access over TLS.
+**Security.** Least-privilege GitHub scopes (Actions: read; Metadata: read). Data processed on Cloudflare Workers/KV; all network access over TLS.
 
 **Liability.** To the maximum extent permitted by law, we are not liable for indirect or consequential damages. Aggregate liability is limited to fees paid in the 3 months preceding the claim.
