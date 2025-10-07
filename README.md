@@ -42,9 +42,6 @@ Create `workflow-state-notifications.json` at the repo root on the **default bra
 **Does it alert on every failed run?**  
 No. You are only notified on **first failure** and **recovery**, e.g. status changes.
 
-**Can multiple people receive emails?**  
-Yes. Depending on your plan, you can add multiple recipients in the JSON
-
 **Org vs personal repos?**  
 Both are supported. The billing account (user or org) controls entitlements.
 
