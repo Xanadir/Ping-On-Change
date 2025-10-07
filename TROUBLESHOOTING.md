@@ -45,3 +45,7 @@ Use this guide when the app isn’t behaving as expected.
     "apply_to": { "workflows": "*" },
     "channels": { "email": ["you@example.com"] }    
   }
+
+---
+
+Questions, bugs, or ideas? Email **[xanadirstrangebird@gmail.com](mailto:xanadirstrangebird@gmail.com)** or open an issue at **[https://github.com/Xanadir/Ping-On-Change/issues](https://github.com/Xanadir/Ping-On-Change/issues)**. We welcome suggestions, feature requests, and clear repro steps to help us fix things fast.

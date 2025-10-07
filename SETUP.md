@@ -123,3 +123,7 @@ There are **no emails** for repeated failures/successes in a row. Non-terminal/i
 2) Use `apply_to.workflows` to select runs (`"*"` = all, or a list/glob), knowing caps will truncate.  
 3) Provide emails under `channels.email`; only the first N are used.  
 4) Expect **one** email on **first failure** and **one** on **recovery** per workflow/branch.
+
+---
+
+Questions, bugs, or ideas? Email **[xanadirstrangebird@gmail.com](mailto:xanadirstrangebird@gmail.com)** or open an issue at **[https://github.com/Xanadir/Ping-On-Change/issues](https://github.com/Xanadir/Ping-On-Change/issues)**. We welcome suggestions, feature requests, and clear repro steps to help us fix things fast.
