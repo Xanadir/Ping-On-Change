@@ -1,7 +1,6 @@
 ## 🗝️ Key features
 - **Status-change only:** fail → ping, recover → ping. No repeats while a workflow stays red.
 - **Indie-friendly setup:** add a tiny JSON file; no secrets or extra infra required.
-- **Multiple recipients per payer:** one person pays, notify many.
 - **Minimal permissions:** Actions (read) + Metadata (read) only.
 
 ---
@@ -20,10 +19,10 @@ Create `workflow-state-notifications.json` at the repo root on the **default bra
 {
   "version": 1,
   "apply_to": {
-    "workflows": [".github/workflows/nightly-ci.yml", ".github/workflows/healthcheck-ci.yml"],    
+    "workflows": [".github/workflows/nightly-ci.yml"],    
   },
   "channels": {
-    "email": ["dev@awesomo.com", "designer@awesomo.com", "qa@awesomo.com"]
+    "email": ["dev@awesomo.com"]
   }
 }
 ```
